@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Trishu ✨</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+
+        body{
+            font-family:'Poppins',sans-serif;
+            background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb);
+            color:#333;
+            overflow-x:hidden;
+            scroll-behavior: smooth;
+        }
+
+        section{
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            padding:40px 20px;
+            text-align:center;
+        }
+
+        h1{
+            font-family:'Dancing Script',cursive;
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        h2{
+            margin-bottom:20px;
+            font-weight:600;
+        }
+
+        button{
+            padding:12px 28px;
+            border:none;
+            border-radius:30px;
+            background:#ff4b6e;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:25px;
+            transition:0.3s;
+            box-shadow: 0 4px 15px rgba(255, 75, 110, 0.3);
+        }
+
+        button:hover{
+            transform:scale(1.05);
+            background:#e6395d;
+        }
+
+        /* HOME */
+        .home{
+            position:relative;
+        }
+
+        .photo-frame{
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            overflow:hidden;
+            border:8px solid white;
+            margin-top:20px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .photo-frame img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .popup{
+            background:white;
+            padding:40px;
+            border-radius:30px;
+            box-shadow:0 15px 35px rgba(0,0,0,0.15);
+            max-width:550px;
+            line-height: 1.6;
+        }
+
+        /* GALLERY */
+        .gallery, .myphotos {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+            max-width:1000px;
+            width:100%;
+            padding: 20px;
+        }
+
+        .card{
+            background:white;
+            padding:15px;
+            border-radius:15px;
+            box-shadow:0 10px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img{
+            width:100%;
+            height: 250px;
+            border-radius:10px;
+            margin-bottom:10px;
+            object-fit: cover;
+        }
+
+        /* FINAL */
+        .final{
+            position:relative;
+            overflow: hidden;
+        }
+
+        .heart{
+            position:absolute;
+            font-size:25px;
+            animation:floatUp 5s linear infinite;
+            opacity:0.7;
+        }
+
+        @keyframes floatUp{
+            0%{transform:translateY(100vh) rotate(0deg); opacity: 1;}
+            100%{transform:translateY(-10vh) rotate(360deg); opacity: 0;}
+        }
+
+        /* STARS */
+        .star{
+            position:absolute;
+            width:3px;
+            height:3px;
+            background:white;
+            border-radius:50%;
+            animation:twinkle 2s infinite alternate;
+        }
+
+        @keyframes twinkle{
+            from{opacity:0.3}
+            to{opacity:1}
+        }
+
+    </style>
+</head>
+
+<body>
+
+<section class="home">
+    <div id="stars"></div>
+    <h1>✨ Happy Birthday Trishu ✨</h1>
+    <p>A small surprise made just for you.</p>
+
+    <div class="photo-frame">
+        <img src="WhatsApp Image 2026-03-17 at 8.26.12 PM.jpeg  " alt="Trishu">
+    </div>
+
+    <button onclick="nextSection(1)">Open Your Surprise 💌</button>
+</section>
+
+
+<section>
+    <div class="popup">
+        <h2>Happy Birthday Trishu 🎂</h2>
+        <p>
+            Hey Trishu,<br><br>
+            Today is your special day and I just wanted to wish you happiness, peace and beautiful moments ahead.
+            <br><br>
+            You truly deserve good things in life and I hope this year brings you lots of smiles and wonderful memories.
+            <br><br>
+            This small page is just a tiny way of saying — Happy Birthday.
+        </p>
+        <button onclick="nextSection(2)">Continue →</button>
+    </div>
+</section>
+
+
+<section>
+    <h2>Some Beautiful Moments 📸</h2>
+    <div class="gallery">
+        <div class="card">
+            <img src="67.jpeg   " alt="Moment 1">
+            <p>One of my favorite smiles.</p>
+        </div>
+        <div class="card">
+            <img src="89.jpeg" alt="Moment 2">
+            <p>A moment worth remembering.</p>
+        </div>
+        <div class="card">
+            <img src="122.jpeg" alt="Moment 3">
+            <p>Just a beautiful memory.</p>
+        </div>
+        <div class="card">
+            <img src="1322.jpeg" alt="Moment 4">
+            <p>This picture always feels special.</p>
+        </div>
+    </div>
+    <button onclick="nextSection(3)">Next Page</button>
+</section>
+
+
+<section>
+    <h2>From My Side</h2>
+    <div class="myphotos">
+        <div class="card">
+            <img src="1544.jpeg" alt="Ashu 1">
+        </div>
+        <div class="card">
+            <img src="100.jpeg" alt="Ashu 2">
+        </div>
+        <div class="card">
+            <img src="187.jpeg" alt="Ashu 3">
+        </div>
+    </div>
+    <p style="margin-top:20px">Just sharing a few moments from my side too.</p>
+    <button onclick="nextSection(4)">Final Message →</button>
+</section>
+
+
+<section class="final" id="final-section">
+    <h1>Happy Birthday Once Again 🎉</h1>
+    <p style="max-width:600px; font-size: 1.1rem;">
+        I just wanted to end this little page by wishing you a very happy birthday again.
+        <br><br>
+        May your days be bright, your dreams come true, and your life stay full of good moments.
+        <br><br>
+        Take care and keep smiling.
+    </p>
+    <p style="margin-top:40px; font-weight: 600;">Made with warmth by Ashu ❤️</p>
+</section>
+
+
+<script>
+    function nextSection(num){
+        document.querySelectorAll('section')[num].scrollIntoView({
+            behavior:'smooth'
+        });
+    }
+
+    /* STARS GENERATOR */
+    const starContainer = document.getElementById('stars');
+    for(let i=0; i<80; i++){
+        let star = document.createElement('div');
+        star.className = 'star';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 2 + 's';
+        starContainer.appendChild(star);
+    }
+
+    /* HEARTS GENERATOR */
+    const finalSection = document.getElementById('final-section');
+    setInterval(() => {
+        let heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.innerHTML = '❤️';
+        heart.style.left = Math.random() * 100 + '%';
+        heart.style.bottom = '-50px';
+        heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
+        heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+        
+        finalSection.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }, 300);
+</script>
+
+</body>
+</html>
